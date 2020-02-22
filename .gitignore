@@ -60,3 +60,10 @@ Screengrabfile
 
 # Sentry token file
 .sentry_token
+
+#PlantUML files
+.wsd
+.pu
+.puml
+.plantuml
+.iuml
