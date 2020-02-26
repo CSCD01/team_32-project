@@ -62,8 +62,12 @@ Screengrabfile
 .sentry_token
 
 #PlantUML files
-.wsd
-.pu
-.puml
-.plantuml
-.iuml
+*.wsd
+*.pu
+*.puml
+*.plantuml
+*.iuml
+
+#PDF.js Builds
+pdf.js/.project
+pdf.js/.settings
