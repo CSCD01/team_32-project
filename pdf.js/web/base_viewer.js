@@ -426,7 +426,7 @@ class BaseViewer {
       // evicted from the buffer and destroyed even if we pause its rendering.
       this._buffer.push(pageView);
     };
-    this.eventBus.on("pagerender", this._onBeforeDraw);
+    this.eventBus._on("pagerender", this._onBeforeDraw);
 
     this._onAfterDraw = evt => {
       if (evt.cssTransform || onePageRenderedCapability.settled) {
@@ -434,10 +434,10 @@ class BaseViewer {
       }
       onePageRenderedCapability.resolve();
 
-      this.eventBus.off("pagerendered", this._onAfterDraw);
+      this.eventBus._off("pagerendered", this._onAfterDraw);
       this._onAfterDraw = null;
     };
-    this.eventBus.on("pagerendered", this._onAfterDraw);
+    this.eventBus._on("pagerendered", this._onAfterDraw);
 
     // Fetch a single page so we can get a viewport that will be the default
     // viewport for all pages
@@ -582,11 +582,11 @@ class BaseViewer {
     this._spreadMode = SpreadMode.NONE;
 
     if (this._onBeforeDraw) {
-      this.eventBus.off("pagerender", this._onBeforeDraw);
+      this.eventBus._off("pagerender", this._onBeforeDraw);
       this._onBeforeDraw = null;
     }
     if (this._onAfterDraw) {
-      this.eventBus.off("pagerendered", this._onAfterDraw);
+      this.eventBus._off("pagerendered", this._onAfterDraw);
       this._onAfterDraw = null;
     }
     // Remove the pages from the DOM...
@@ -734,6 +734,8 @@ class BaseViewer {
    *   format: <page-ref> </XYZ|/FitXXX> <args..>
    * @property {boolean} [allowNegativeOffset] - Allow negative page offsets.
    *   The default value is `false`.
+   * @property {boolean} [ignoreDestinationZoom] - Ignore the zoom argument in
+   *   the destination array. The default value is `false`.
    */
 
   /**
@@ -744,6 +746,7 @@ class BaseViewer {
     pageNumber,
     destArray = null,
     allowNegativeOffset = false,
+    ignoreDestinationZoom = false,
   }) {
     if (!this.pdfDocument) {
       return;
@@ -834,10 +837,12 @@ class BaseViewer {
         return;
     }
 
-    if (scale && scale !== this._currentScale) {
-      this.currentScaleValue = scale;
-    } else if (this._currentScale === UNKNOWN_SCALE) {
-      this.currentScaleValue = DEFAULT_SCALE_VALUE;
+    if (!ignoreDestinationZoom) {
+      if (scale && scale !== this._currentScale) {
+        this.currentScaleValue = scale;
+      } else if (this._currentScale === UNKNOWN_SCALE) {
+        this.currentScaleValue = DEFAULT_SCALE_VALUE;
+      }
     }
 
     if (scale === "page-fit" && !destArray[4]) {
@@ -1088,17 +1093,20 @@ class BaseViewer {
    * @param {HTMLDivElement} textLayerDiv
    * @param {number} pageIndex
    * @param {PageViewport} viewport
+   * @param {boolean} enhanceTextSelection
+   * @param {EventBus} eventBus
    * @returns {TextLayerBuilder}
    */
   createTextLayerBuilder(
     textLayerDiv,
     pageIndex,
     viewport,
-    enhanceTextSelection = false
+    enhanceTextSelection = false,
+    eventBus
   ) {
     return new TextLayerBuilder({
       textLayerDiv,
-      eventBus: this.eventBus,
+      eventBus,
       pageIndex,
       viewport,
       findController: this.isInPresentationMode ? null : this.findController,
