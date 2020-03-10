@@ -1,0 +1,3 @@
+[submodule "pdf.js"]
+	path = pdf.js
+	url = https://github.com/CSCD01-team32/pdf.js.git
