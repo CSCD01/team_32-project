@@ -16,5 +16,5 @@
 - [Deliverable 1 Project Choice](https://github.com/CSCD01/team_32-project/tree/master/Deliverable%201)
   - [Project Architecture and Software Development Process](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%201/Project%20Architecture%20and%20Software%20Development%20Process.pdf)
 - [Deliverable 2 Issue Fixes](https://github.com/CSCD01/team_32-project/tree/master/Deliverable%202)
-  - [Written part](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%201/Deliverable%202%20Issues.pdf)
+  - [Written part](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%202/Deliverable%202%20Issues.pdf)
   
