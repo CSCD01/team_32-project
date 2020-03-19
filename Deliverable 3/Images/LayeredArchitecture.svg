@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="387px" preserveAspectRatio="none" style="width:343px;height:387px;" version="1.1" viewBox="0 0 343 387" width="343px" zoomAndPan="magnify"><defs><filter height="300%" id="faabhjm9a2o5b" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--entity core--><rect fill="#FFFFFF" filter="url(#faabhjm9a2o5b)" height="82.8906" style="stroke: #000000; stroke-width: 1.5;" width="269" x="34.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="50" lengthAdjust="spacingAndGlyphs" textLength="249" x="44.5" y="69.9043">Core Layer</text><!--entity display--><rect fill="#FFFFFF" filter="url(#faabhjm9a2o5b)" height="82.8906" style="stroke: #000000; stroke-width: 1.5;" width="326" x="6" y="151"/><text fill="#000000" font-family="sans-serif" font-size="50" lengthAdjust="spacingAndGlyphs" textLength="306" x="16" y="212.9043">Display Layer</text><!--entity viewer--><rect fill="#FFFFFF" filter="url(#faabhjm9a2o5b)" height="82.8906" style="stroke: #000000; stroke-width: 1.5;" width="313" x="12.5" y="294"/><text fill="#000000" font-family="sans-serif" font-size="50" lengthAdjust="spacingAndGlyphs" textLength="293" x="22.5" y="355.9043">Viewer Layer</text><!--link core to display--><path d="M169,91.283 C169,108.236 169,127.995 169,145.466 " fill="none" id="core-&gt;display" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="169,150.809,173,141.809,169,145.809,165,141.809,169,150.809" style="stroke: #000000; stroke-width: 1.0;"/><!--link display to viewer--><path d="M169,234.283 C169,251.236 169,270.995 169,288.4658 " fill="none" id="display-&gt;viewer" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="169,293.8086,173,284.8086,169,288.8086,165,284.8086,169,293.8086" style="stroke: #000000; stroke-width: 1.0;"/><!--
+@startuml
+skinparam rectangle {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+    FontSize 50
+}
+
+skinparam ArrowColor Black
+
+rectangle "Core Layer" as core {
+
+}
+
+rectangle "Display Layer" as display {
+
+}
+
+rectangle "Viewer Layer" as viewer {
+
+}
+
+core - -> display
+display - -> viewer
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_191-b12
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: CA
+--></g></svg>
