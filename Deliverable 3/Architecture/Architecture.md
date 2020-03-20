@@ -42,11 +42,13 @@ The external folder contains third party code that the system interacts with.
 
 ### Factory Design Pattern
 
-The Factory design pattern is a recurring pattern used for different classes in this project.
+The Factory design pattern is a recurring pattern used for different classes in this project. For example, the file annotation.js evidently uses the factory design pattern (see image below) for the creation of different types of annotation representations for a pdf.
 
 <div align="center">
     <img src="../Images/Architecture.svg"/>
 </div>
+
+In the image above, the class Annotation factory creates any type of annotation.
 
 ## Conclusion
 
