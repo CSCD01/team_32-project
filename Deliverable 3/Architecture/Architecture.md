@@ -34,6 +34,15 @@ The main file in the display layer is the file called api.js. In this file there
 
 The viewer is built on the display layer and is the User Interface (UI) for PDF viewer in Firefox and the other browser extensions within the project. The viewer layer can be found in the web folder.
 
+The viewer is just a regular HTML page. It is a rendered page that contains:
+- A non-scaled canvas
+- A text layer, which is an invisible <div> to store text for selection (UML class diagram can be seen below)
+- An annotation layer than contains hyperlinks and notes (UML class diagram can be seen below)
+
+<div align="center">
+    <img src="../Images/Architecture.png"/>
+</div>
+
 ## External [(external)](https://github.com/CSCD01-team32/pdf.js/blob/af8d0b9597ccd0e020910eafd74dd6ad140db520/external)
 
 The external folder contains third party code that the system interacts with.
