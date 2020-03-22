@@ -5,7 +5,7 @@ PDF.js is a Portable Document Format(PDF) viewer that is built with HTML5, CSS a
 PDF.js’s overall architecture is made up of different layers and understanding each layer is key to understanding the overall project. PDF.js is split into three main layers, namely the Core, Display, and Viewer layer.
 
 <div align="center">
-    <img src="../Images/LayeredArchitecture.svg"/>
+    <img height="300" width="400" src="../Images/LayeredArchitecture.svg"/>
 </div>
 
 ## Higher-level Diagram
@@ -65,8 +65,6 @@ The Factory design pattern is a recurring pattern used for different classes in 
 <div align="center">
     <img src="../Images/Annotation.png"/>
 </div>
-
-In the image above, the class Annotation factory creates any type of annotation.
 
 ## Conclusion
 
