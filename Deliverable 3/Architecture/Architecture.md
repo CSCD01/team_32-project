@@ -66,6 +66,19 @@ The Factory design pattern is a recurring pattern used for different classes in 
     <img src="../Images/Annotation.png"/>
 </div>
 
+### Facade Design Pattern
+
+<div align="center">
+    <figure>
+        <img height="400" src="../Images/Facade_Design_Pattern.png"/>
+        <figcaption align="right" style="color:grey;font-size:10px">~ Image taken from https://www.geeksforgeeks.org/facade-design-pattern-introduction/</figcaption>
+    </figure>
+</div>
+
+The Facade design pattern is used in the system. It is a structural design pattern that hides the complexities of the system and provides an easier to use interface for clients. Earlier, we mentioned that the core layer is too advanced to use directly, so an easier to use api must be created. In this case we would consider the facade as the api.
+
+Other developers can use the api from the display layer, to help them build their own viewer. This can be done because you can download the a prebuilt version of pdf.js, which is exported by the file src/pdf.js. The prebuilt version can be downloaded from several CDNs. The prebuilt version can then be used by other developers to in the development of their own pdf viewer.
+
 ## Conclusion
 
 The overall system is well designed, but there is a lot of code that is not well documented, so reading through some of the code and trying to understand what was going on was pretty difficult. We like how they used a shared folder for code that is used by both the core and display layer.
