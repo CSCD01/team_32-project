@@ -10,9 +10,21 @@ PDF.js’s overall architecture is made up of different layers and understanding
 
 ## Higher-level Diagram
 
+<div align="center">
+    <img src="../Images/Overall_Architecture.png"/>
+</div>
+
+PDF.js is a three layered architecture system. It starts with the core layer, then the display layer, then the viewer layer. Each layer has different components that have their own job in the overall system. Some components depend on other components, even components from different layers. Each subsequent layer depends upon the layers above it, i.e. the display layer depends on the core layer and the viewer layer depends on the display layer.
+
+A basic activity flow of what's happening to the PDF in the system can be seen in the image below.
+
+<div align="center">
+    <img src="../Images/flow.png"/>
+</div>
+
 ## Core [(src/core)](https://github.com/CSCD01-team32/pdf.js/blob/af8d0b9597ccd0e020910eafd74dd6ad140db520/src/core)
 
-The core layer is the layer where a PDF in binary is parsed and interpreted. It is the foundation for all subsequent layers. It is located in the src/core folder. It has different files for interpreting and parsing PDF files.
+The core layer is the layer where a PDF in binary is parsed and interpreted. It is the foundation for all subsequent layers. It is located in the src/core folder. It has different files for interpreting and parsing PDF files. The core layer isn't used directly because it is too advanced so an api must be built for easier use.
 
 ## Display [(src/display)](https://github.com/CSCD01-team32/pdf.js/blob/af8d0b9597ccd0e020910eafd74dd6ad140db520/src/display)
 
@@ -35,6 +47,7 @@ The main file in the display layer is the file called api.js. In this file there
 The viewer is built on the display layer and is the User Interface (UI) for PDF viewer in Firefox and the other browser extensions within the project. The viewer layer can be found in the web folder.
 
 The viewer is just a regular HTML page. It is a rendered page that contains:
+
 - A non-scaled canvas
 - A text layer, which is an invisible <div> to store text for selection (UML class diagram can be seen below)
 - An annotation layer than contains hyperlinks and notes (UML class diagram can be seen below)
@@ -43,15 +56,11 @@ The viewer is just a regular HTML page. It is a rendered page that contains:
     <img src="../Images/Architecture.png"/>
 </div>
 
-## External [(external)](https://github.com/CSCD01-team32/pdf.js/blob/af8d0b9597ccd0e020910eafd74dd6ad140db520/external)
-
-The external folder contains third party code that the system interacts with.
-
 ## Design Patterns/Principles
 
 ### Factory Design Pattern
 
-The Factory design pattern is a recurring pattern used for different classes in this project. For example, the file annotation.js evidently uses the factory design pattern (see image below) for the creation of different types of annotation representations for a pdf.
+The Factory design pattern is a recurring pattern used for different classes in this project. For example, the file annotation.js in the src/core folder evidently uses the factory design pattern (see image below) for the creation of different types of annotation representations for a pdf.
 
 <div align="center">
     <img src="../Images/Annotation.png"/>
