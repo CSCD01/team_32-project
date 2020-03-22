@@ -71,7 +71,6 @@ The Factory design pattern is a recurring pattern used for different classes in 
 <div align="center">
     <figure>
         <img height="400" src="../Images/Facade_Design_Pattern.png"/>
-        <figcaption align="right" style="color:grey;font-size:10px">~ Image taken from https://www.geeksforgeeks.org/facade-design-pattern-introduction/</figcaption>
     </figure>
 </div>
 
