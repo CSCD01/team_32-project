@@ -1,0 +1,9 @@
+team_32 Deliverable 1 and Interview Marks
+
+Report: 37/40
+  -Overall Architecture: 12/15
+  -Software Process: 15/15
+  -Presentation and Quality of Writing: 10/10
+Comments: Very detailed analysis of architecture, but missing UML for overall architecture and existing UML is too cluttered (almost illegible font size)
+
+Interview: 10/10
