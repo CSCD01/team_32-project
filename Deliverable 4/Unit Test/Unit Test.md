@@ -11,7 +11,7 @@ Fortunately for us, there was already a unit test file to unit test functions fr
 
 Unit tests can be found in the file [ui_utils_spec.js](https://github.com/CSCD01-team32/pdf.js/blob/toolbar-feature/test/unit/util_spec.js).
 
-### 1. setFocusPrevious
+## 1. setFocusPrevious
 
 The function *setFocusPrevious* sets the focus to the previous item in the toolbar. When unit testing for each of the four toolbars, we decided to make sure the focus would start at the first item. Then we tested to make sure that if we call setFocusPrevious while the focus is on the first item, that the focus changes to the last item, to make the arrow key functionality circular. Lastly, we just tested to make sure that the focus goes to the previous item, if it is not focused on the first item.
 
@@ -21,7 +21,7 @@ The function *setFocusPrevious* sets the focus to the previous item in the toolb
     <img src="./setFocusPreviousTest.png"/>
 </div>
 
-### 2. setFocusNext
+## 2. setFocusNext
 
 The function *setFocusNext* sets the focus to the next item in the toolbar. When unit testing for each of the four toolbars, we decided to make sure the focus would start at the first item. Then we tested to make sure that if we call setFocusNext it should go to be next item. Lastly we checked to make sure that if the toolbar is focused on the last item and we call setFocusNext, it should go back to the first item, in order to ensure that the arrow key functionality is circular.
 
@@ -30,4 +30,3 @@ The function *setFocusNext* sets the focus to the next item in the toolbar. When
 <div>
     <img src="./setFocusNextTest.png"/>
 </div>
-
