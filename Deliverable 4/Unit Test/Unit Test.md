@@ -30,3 +30,4 @@ The function *setFocusNext* sets the focus to the next item in the toolbar. When
 <div>
     <img src="./setFocusNextTest.png"/>
 </div>
+
