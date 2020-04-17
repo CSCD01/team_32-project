@@ -21,6 +21,7 @@
   - [Written Part](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%203/Deliverable%203.pdf)
   - [Architecture Revisited](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%203/Architecture/Architecture.md)
 - [Deliverable 4 New Feature Implementation](https://github.com/CSCD01/team_32-project/tree/master/Deliverable%204)
+  - Feature is in the branch 'toolbar-feature'
   - [Written Part](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%204/Deliverable%204.pdf)
   - [User Guide](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%204/User%20Guide.pdf)
   - [Unit Test](https://github.com/CSCD01/team_32-project/blob/master/Deliverable%204/Unit%20Test/Unit%20Test.md)
