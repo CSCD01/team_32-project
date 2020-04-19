@@ -1,0 +1,13 @@
+team_32 Deliverable 4 and Interview Marks
+
+Report:                                105/120
+  -Implementation:                      38/40
+  -Testing:                             20/20
+  -User Guide(s):                       10/10
+  -Design Document:                     10/10
+  -Process:                             18/20
+  -Presentation and Quality of Writing:  9/10
+  -Amount of work done compared with other teams: **To be graded by Anya** /10
+Comments: Should not be commiting directly to master so often. Documentation of code is minimal. The user guide and unit test documents should've been part of the main deliverable document (I almost missed the unit test document when initially marking).
+
+Interview: 10/10
