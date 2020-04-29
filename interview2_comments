@@ -1,0 +1,58 @@
+5 / 5
+Reflect on the strengths and weaknesses of your team:
+  -- How did each team member's strengths contribute to the overall
+    result of the project?
+  -- If you had to do this again, how would you use each member's
+    strengths differently to maximise the success of the project?
+
+
+15 / 20
+Present your contributions to the FOSS project of your choice:
+1/ 1 -- Explain the process you followed for choosing the feature (for
+    the last deliverable).
+1/ 1 -- Reflect on the choice of the feature.
+3/ 3 -- Demonstrate the feature.
+7/ 10 -- Present the design and implementation of the feature:
+       -- How does your contribution fit into the overall
+          design/architecture of the project?
+       -- What software design decisions did you make? Why were these
+          the best decisions?
+       -- What was the most challenging part of the design and
+          implementation?
+3/ 5  -- Present the complete verification and validation strategy you
+        followed. Explain your choices.
+  -- If you have submitted a PR, present the results.
+
+
+6 / 10
+Present software processes, methods, and tools that you used in
+  your work:
+3/ 5  -- Describe the specifics of the software process.
+1/ 2  -- Explain why this process worked (or didn't work!) for your
+        team for your project.
+2/ 3  -- Reflect on the good and bad decisions you made along the way,
+        and any course corrections you made.
+
+I was happy to see that you were well prepared for the presentation. It
+is unfortunate that all members were not effectively present.
+You were able to answer my questions satisfactorily.
+The demo was good.
+Your presentation did not properly address the issues of design and
+implementation of the feature, but you were able to answer my
+questions on the topic satisfactorily, with the use of appropriate
+diagrams.
+The presentation on V&V was lacking. I understand that the missing team
+member was supposed to present it, but it is the responsibility of every
+team member to be able to do an adequate job presenting any part.
+
+I did not feel that you put in the work to learn a software process
+and apply the knowledge in your project as much as you could. Note
+that the process (lack of process?) you call "code review" is not what
+the software engineering community would call code review. I did not
+see that the process you used overall can be called Kanban. The use of
+the board is not all that is needed.
+
+Overall, I hope you had a good learning experience developing a real
+piece of software and learning to contribute to open source projects
+as part of the course.
+
